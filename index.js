@@ -25,7 +25,7 @@ app.post("/payment/create", async (req, res) => {
     });
 
     res.status(201).json({
-      clientSecret: paymentIntent.client_Secret,
+      clientSecret: paymentIntent.client_secret,
     });
   } else {
     res.status(403).json({
